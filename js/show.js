@@ -2,7 +2,7 @@ const wrapperInfo = document.querySelector("#showInfo");
 const showId = new URLSearchParams(location.search).get("id");
 
 function showInfo(showId) {
-	fetch(`http://api.tvmaze.com/shows/${showId}`)
+	fetch(`https://api.tvmaze.com/shows/${showId}`)
 		.then((res) => res.json())
 		.then((data) => {
 			const title = document.createElement("h1");

@@ -1,7 +1,7 @@
 const wrapper = document.querySelector("#showWrapper");
 
 function loadShows() {
-	fetch("http://api.tvmaze.com/shows")
+	fetch("https://api.tvmaze.com/shows")
 		.then((res) => res.json())
 		.then((data) => {
 			wrapper.innerHTML = "";

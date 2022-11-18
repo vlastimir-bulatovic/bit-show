@@ -1,7 +1,7 @@
 const searchWrapper = document.querySelector("#showWrapper");
 
 function searchShows(query) {
-	fetch(`http://api.tvmaze.com/search/shows?q=${query}`)
+	fetch(`https://api.tvmaze.com/search/shows?q=${query}`)
 		.then((res) => res.json())
 		.then((data) => {
 			const shows = data.slice(0, 10);
