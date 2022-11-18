@@ -12,7 +12,7 @@ function createHeader() {
 
 	const brand = document.createElement("a");
 	brand.textContent = `BitShow`;
-	brand.href = "/";
+	brand.href = "./";
 	nav.append(brand);
 
 	const search = document.createElement("input");
